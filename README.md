@@ -40,14 +40,6 @@ The **Investor Self-Service Portal** is a web-based application that allows inve
    npm install
    ```
 
-3. Configure environment variables:
-   - Create a `.env` file in the `backend` directory and set up:
-     ```env
-     MONGO_URI=your_mongodb_connection_string
-     JWT_SECRET=your_jwt_secret
-     PORT=5000
-     ```
-
 4. Start the backend server:
    ```sh
    cd backend
