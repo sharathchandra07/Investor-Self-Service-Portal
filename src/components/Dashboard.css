@@ -1,0 +1,185 @@
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+/* https://api.stockdata.org/v1/data/quote?symbols=${symbol}&api_token=GodVDajcV7gWPC9Mxvqqk7Ou1ECqVWrasqES8M7W */
+:root {
+  --trader-primary: #0a1929;
+  --trader-secondary: #132f4c;
+  --trader-accent: #0288d1;
+  --trader-dark: #051e34;
+  --trader-light: #f5f5f5;
+  --trader-card: rgba(10, 25, 41, 0.95);
+  --trader-hover: #1e4976;
+  --trader-border: #132f4c;
+}
+
+body {
+  background-color: var(--trader-dark);
+  color: var(--trader-light);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper {
+  background: linear-gradient(rgba(5, 30, 52, 0.9), rgba(5, 30, 52, 0.95)), 
+              url('https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat fixed;
+  min-height: 100vh;
+}
+
+.navbar-trader {
+  background-color: rgba(10, 25, 41, 0.95);
+  border-bottom: 1px solid var(--trader-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.sidebar {
+  background-color: rgba(10, 25, 41, 0.95);
+  height: calc(100vh - 56px);
+  width: 250px;
+  border-right: 1px solid var(--trader-border);
+  position: fixed;
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.main-content {
+  background-color: transparent;
+  min-height: calc(100vh - 56px);
+}
+
+.search-box {
+  background-color: rgba(19, 47, 76, 0.8);
+  border: 1px solid var(--trader-border);
+  color: var(--trader-light);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.search-box:focus {
+  background-color: rgba(19, 47, 76, 0.9);
+  color: var(--trader-light);
+  border-color: var(--trader-accent);
+  box-shadow: 0 0 0 0.25rem rgba(2, 136, 209, 0.25);
+}
+
+.btn-trader {
+  background-color: var(--trader-accent);
+  color: var(--trader-light);
+  border: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+}
+
+.btn-trader:hover {
+  background-color: #0277bd;
+  color: var(--trader-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(2, 136, 209, 0.3);
+}
+
+.nav-link {
+  color: #94a3b8 !important;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 0.75rem 1rem !important;
+  margin-bottom: 0.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  color: var(--trader-light) !important;
+  background-color: var(--trader-hover);
+}
+
+.nav-link.active {
+  color: var(--trader-light) !important;
+  background-color: var(--trader-hover);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: var(--trader-accent);
+  border-radius: 0 2px 2px 0;
+}
+
+.navbar-brand {
+  color: var(--trader-light) !important;
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  background-color: var(--trader-card) !important;
+  border: 1px solid var(--trader-border) !important;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--trader-accent);
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.logout-link {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.logout-link .nav-link {
+  background-color: rgba(220, 38, 38, 0.1);
+  transition: all 0.3s ease;
+}
+
+.logout-link .nav-link:hover {
+  background-color: rgba(220, 38, 38, 0.2);
+  transform: translateY(-1px);
+}
+
+.profile-button {
+  background-color: rgba(19, 47, 76, 0.8);
+  border: 1px solid var(--trader-border);
+  padding: 0.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.profile-button:hover {
+  background-color: var(--trader-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.top-nav-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.input-group {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}

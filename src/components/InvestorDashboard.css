@@ -1,0 +1,90 @@
+/* InvestorDashboard.css */
+.dashboard-container {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text color */
+  }
+  
+  header {
+    background-color: #007bff; /* Blue header */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .portfolio-summary, .market-news {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .portfolio-summary p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-table-container {
+    overflow-x: auto; /* Horizontal scroll for table */
+    max-height: 300px; /* Limit table height for vertical scroll */
+  }
+  
+  .portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .portfolio-table th, .portfolio-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .portfolio-table th {
+    background-color: #eee;
+    font-weight: bold;
+  }
+  
+  .market-news {
+    display: flex;
+    gap: 20px; /* Space between market data and news */
+  }
+  
+  .market-data, .news {
+    flex: 1; /* Equal width for market data and news */
+  }
+  
+  .news ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .news li {
+    margin-bottom: 5px;
+  }
+  
+  .news a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #777;
+  }
+  
+  /* Responsive adjustments (example) */
+  @media (max-width: 768px) {
+    .market-news {
+      flex-direction: column; /* Stack market data and news vertically */
+    }
+  }

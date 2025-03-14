@@ -1,0 +1,89 @@
+#explore:hover {
+    transform: scale(1.07);
+}
+#explore {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+#other {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border: 1px solid black;
+}
+#other:hover {
+    transform: scale(1.07);
+}
+.sidehead {
+    width: 1011px;
+    margin-left: 200px;
+}
+#side {
+    margin-right: 20px;
+}
+#register:hover {
+    background-color: rgb(0, 128, 0);
+    border: none;
+}
+/* 1) Make sure the navbar itself has a transparent background or any design you want */
+.navbar {
+    background: transparent !important;
+    position: relative; /* So the collapse can be absolutely positioned */
+  }
+  
+  /* 2) Force the collapsed menu to take the full screen when expanded */
+  @media (max-width: 991px) {
+    /* On large screens, default Bootstrap behavior is fine. 
+       This only applies for md or smaller screens. */
+    
+    .navbar-collapse.show {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      /* Add a modern semi-transparent background with blur */
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+  
+      /* Make sure it's on top of everything */
+      z-index: 9999;
+  
+      /* Fade-in effect */
+      opacity: 1;
+      transition: opacity 0.4s ease-in-out;
+    }
+  
+    .navbar-collapse {
+      opacity: 0; /* Hidden by default */
+      transition: opacity 0.4s ease-in-out;
+    }
+  
+    /* Center the nav items vertically and horizontally */
+    .navbar-nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    /* Style each nav-link for a modern look */
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-size: 1.5rem;
+      margin: 0.5rem 0;
+      transition: transform 0.3s ease;
+    }
+  
+    /* Slight hover effect */
+    .navbar-nav .nav-link:hover {
+      transform: scale(1.1);
+      color: #ffcc00 !important; /* highlight color on hover */
+    }
+  
+    /* Position the sign-up button at the bottom or keep it with the links */
+    .btn-outline-light {
+      font-size: 1.3rem;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+    }
+  }
+  

@@ -1,0 +1,41 @@
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+
+.profile-header {
+  background: linear-gradient(135deg, #0e1839 0%, #1d3577 100%);
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  transition: all 0.2s ease;
+  background-color: #1f2937 !important;
+  /* color: #60a5fa; */
+}
+
+.profile-item {
+  background-color: #1f2937;
+  transition: all 0.2s ease;
+}
+
+.profile-item:hover {
+  background-color: #374151;
+}
+
+.profile-item:hover .profile-icon {
+  /* background-color: #2563eb !important; */
+  color: white;
+}
+
+.card {
+  background-color: #0c1323 !important;
+  border: 3px solid #374151 !important;
+}
+
+.text-muted {
+  color: #9ca3af !important;
+}
+
+.text-dark {
+  color: #e5e7eb !important;
+}

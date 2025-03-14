@@ -1,0 +1,20 @@
+#explore:hover {
+    transform: scale(1.07);
+}
+#explore {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+#other {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    border: 1px solid black;
+}
+#other:hover {
+    transform: scale(1.07);
+}
+.sidehead {
+    width: 1011px;
+    margin-left: 200px;
+}
+#side {
+    margin-right: 20px;
+}
