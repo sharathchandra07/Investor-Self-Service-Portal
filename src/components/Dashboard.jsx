@@ -69,7 +69,7 @@ function App() {
     setError('');
     
     try {
-      const stockdata = await axios.get(`https://api.stockdata.org/v1/data/quote?symbols=${symbol}&api_token=GodVDajcV7gWPC9Mxvqqk7Ou1ECqVWrasqES8M7W`);
+      const stockdata = await axios.get(`https://api.stockdata.org/v1/data/quote?symbols=${symbol}&api_token=YOUR_API_KEY`);
       // console.log(stockdata.data);
       
       const historicalData = Array.from({length: 30}, (_, i) => ({
