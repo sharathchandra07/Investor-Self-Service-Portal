@@ -8,3 +8,4 @@ Here are the output images:
 ![Alt Text](Output/6.jpg)
 ![Alt Text](Output/4.jpg)
 ![Alt Text](Output/5.jpg)
+![Alt Text](Output/7.jpg)
