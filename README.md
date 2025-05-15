@@ -2,7 +2,7 @@
 
 
 
-Here are the output images:
+Here is the Implementation:
 ![Alt Text](Output/1.jpg)
 ![Alt Text](Output/2.jpg)
 ![Alt Text](Output/6.jpg)
