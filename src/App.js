@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import ScreenTime from './ScreenTime';
 import './App.css';
 // import Dashboard from './components/Dashboard';
